@@ -7,7 +7,7 @@ export default function User(props){
         <div className="user-container">
             <h3 className="name">Name:  {users.fname} {users.lname}</h3>
             <p>Email: {users.email}</p>
-            <pre>{JSON.stringify(users)}</pre>
+            {/* <pre>{JSON.stringify(users)}</pre> */}
         </div>
     )
 }

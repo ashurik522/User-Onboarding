@@ -65,12 +65,12 @@ export default function OnboardingForm(props) {
                         value={values.password}
                         onChange={onChange}
                         name="password"
-                        type="text"
+                        type="password"
                     />
                 </label>
 
-                <label>Terms of Service
-                    <input
+                <label className="terms">Terms of Service
+                    <input 
                         name="terms"
                         type="checkbox"
                         onChange={onChange}
