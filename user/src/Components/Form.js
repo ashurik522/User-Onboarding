@@ -31,7 +31,7 @@ export default function OnboardingForm(props) {
             <div className="inputs">
                 <label>First Name: 
                     <input
-                        //value={}
+                        value={values.fname}
                         onChange={onChange}
                         name="fname"
                         type="text"
@@ -40,7 +40,7 @@ export default function OnboardingForm(props) {
 
                 <label>Last Name: 
                     <input
-                        //value={}
+                        value={values.lname}
                         onChange={onChange}
                         name="lname"
                         type="text"
@@ -49,7 +49,7 @@ export default function OnboardingForm(props) {
 
                 <label>Email: 
                     <input
-                        //value={}
+                        value={values.email}
                         onChange={onChange}
                         name="email"
                         type="email"
@@ -58,7 +58,7 @@ export default function OnboardingForm(props) {
 
                 <label>Password: 
                     <input
-                        //value={}
+                        value={values.password}
                         onChange={onChange}
                         name="password"
                         type="text"
@@ -70,13 +70,11 @@ export default function OnboardingForm(props) {
                         name="terms"
                         type="checkbox"
                         onChange={onChange}
-                        //checked={}
+                        checked={values.terms}
                     />
                 </label>
-
-
             </div>
-            <button disabled={disabled}>Submit</button>
+            <button disabled={disabled} >Submit</button>
         </form>
     )
 }
