@@ -26,7 +26,11 @@ export default function OnboardingForm(props) {
             <h2>Add User Information</h2>
             
             <div className="errors">
-                
+                <div>{errors.fname}</div>
+                <div>{errors.lname}</div>
+                <div>{errors.email}</div>
+                <div>{errors.password}</div>
+                <div>{errors.terms}</div>
             </div>
             <div className="inputs">
                 <label>First Name: 
